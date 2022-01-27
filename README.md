@@ -1,0 +1,1 @@
+A projet to put in practice all the lessons from the JavaScript course inside the Full Stack JavaScript path in Odin Project
