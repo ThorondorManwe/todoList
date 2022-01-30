@@ -11,3 +11,16 @@
 .error {
     background: red;
 }
+
+.success, .danger {
+    color: white;
+    max-width: 50em;
+}
+
+.danger {
+    background-color: red;
+}
+
+.success {
+    background-color: green;
+}
