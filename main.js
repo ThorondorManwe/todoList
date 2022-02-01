@@ -41,8 +41,17 @@ class UI {
         ]; */
 
         const todos = Store.getTodos();
+        UI.projectSections();                               //Antes de meter los todos  la lista recorre para ver cuántos proyectos hay
 
         todos.forEach((todo) => UI.addTodoToList(todo));
+    }
+
+    // Create project's sections
+    static projectSections() {
+        const todos = Store.getTodos();
+
+        // Get all the projects
+        todos.forEach((todo) => console.log(todo.group));
     }
 
     static addTodoToList(todo) {
@@ -63,6 +72,7 @@ class UI {
         `;
 
         list.appendChild(row);
+        
     }
 
     static deleteTodo(el) {
@@ -96,7 +106,7 @@ class UI {
 }
 
 
-// Store Class: Hanldes Storage
+// Store Class: Handles Storage
 // the methods are static so we can call them directly without having to instantiate the store class
 class Store {
     static getTodos() {

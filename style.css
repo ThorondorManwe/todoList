@@ -1,3 +1,21 @@
+html {
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+body {
+    /* margin: 0; */
+    font-size: 2rem;
+    /* display: flex;
+    flex: 1; */
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* Estilos del mensaje      */
 .success, .error {
     color: white;
     padding: 5px;
@@ -23,4 +41,10 @@
 
 .success {
     background-color: green;
+}
+
+/* Estilos de la tabla */
+.table {
+    background-color: white;
+    max-width: 3000vh;
 }
